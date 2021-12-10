@@ -2,8 +2,9 @@
   "name": "ervy-ng",
   "version": "1.2.0",
   "scripts": {
+    "heroku-postbuild": "ng build --prod",
     "ng": "ng",
-    "start": "node serve.js",
+    "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -37,10 +38,11 @@
     "@angular/cli": "~12.1.1",
     "@angular/compiler-cli": "~12.1.1",
     "@angular/language-service": "~12.1.1",
-    "@types/node": "^12.11.1",
     "@types/jasmine": "~3.6.0",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "^12.11.1",
     "codelyzer": "^6.0.0",
+    "enhanced-resolve": "^3.3.0",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
     "karma": "~6.3.4",
@@ -52,7 +54,9 @@
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~4.3.5"
+  },
+  "engines": {
+    "node": "14.17.4",
+    "npm": "6.14.14"
   }
-
-
 }
